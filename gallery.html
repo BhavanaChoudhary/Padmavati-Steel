@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - Padmavati Steel Fab System</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* General Reset */
+        body, h1, h2, h3, p, ul, li, a {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            text-decoration: none;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        /* Header */
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2.5em;
+            color: #b7282e;
+        }
+
+        /* Navigation */
+        nav {
+            background-color: #444;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            font-weight: bold;
+            font-size: 1.1em;
+            padding: 10px 20px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        nav ul li a:hover {
+            background-color: #b7282e;
+            color: #fff;
+            border-radius: 5px;
+        }
+
+        /* Main Content */
+        main {
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        section h2 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        section p {
+            font-size: 1.2em;
+            margin-bottom: 30px;
+            color: #777;
+        }
+
+        /* Gallery */
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Ensures equal width for each image */
+            gap: 20px;
+            margin-top: 40px;
+            padding: 0 20px;
+        }
+
+        .gallery img {
+            width: 100%; /* Ensures images take full width of the grid cell */
+            height: 300px; /* Fixed height to make all images equal size */
+            object-fit: cover; /* Ensures images cover the grid cell without distortion */
+            border-radius: 10px;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .gallery img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Footer */
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        .footer-container {
+            display: flex;
+            justify-content: space-between;
+            gap: 40px;
+            margin-bottom: 30px;
+        }
+
+        .footer-logo h3 {
+            font-size: 1.8em;
+            color: #b7282e;
+        }
+
+        .footer-logo p {
+            color: #ccc;
+            font-size: 1em;
+        }
+
+        .footer-links h4, .footer-social h4 {
+            font-size: 1.4em;
+            margin-bottom: 10px;
+            color: #b7282e;
+        }
+
+        .footer-links ul, .footer-social ul {
+            padding-left: 0;
+        }
+
+        .footer-links li, .footer-social li {
+            margin-bottom: 8px;
+        }
+
+        .footer-links a, .footer-social a {
+            color: #fff;
+            font-size: 1.2em;
+            transition: color 0.3s;
+        }
+
+        .footer-links a:hover, .footer-social a:hover {
+            color: #b7282e;
+        }
+
+        .footer-bottom {
+            font-size: 1em;
+        }
+
+        /* Animations */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        main, .gallery {
+            animation: fadeIn 1s ease-out;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Gallery</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="services.html">Services</a></li>
+            
+        </ul>
+    </nav>
+    <main>
+        <section>
+            <h2>Our Work</h2>
+            <p>Here are some images of our completed projects:</p>
+            <div class="gallery">
+                <img src="images/WhatsApp Image 2024-12-22 at 19.39.58_2bfc8285.jpg" alt="Project 1">
+                <img src="images/WhatsApp Image 2024-12-22 at 19.39.59_73111e29.jpg" alt="Project 2">
+                <img src="images/WhatsApp Image 2024-12-22 at 19.39.59_be87c45d.jpg" alt="Project 3">
+                <img src="images/WhatsApp Image 2024-12-22 at 19.40.00_dda92497.jpg" alt="Project 4">
+                <img src="images/WhatsApp Image 2024-12-22 at 19.40.01_ebce9a26.jpg" alt="Project 5">
+                <img src="images/WhatsApp Image 2024-12-22 at 19.40.02_dd45cb92.jpg" alt="Project 6">
+                <img src="images/WhatsApp Image 2024-12-22 at 19.40.03_cf453916.jpg" alt="Project 7">
+                <img src="images/WhatsApp Image 2024-12-22 at 19.40.57_0c209283.jpg" alt="Project 8">
+                <img src="images/WhatsApp Image 2024-12-22 at 19.40.57_07269800.jpg" alt="Project 9">
+                <img src="images/WhatsApp Image 2024-12-22 at 19.40.58_2ab82cfd.jpg" alt="Project 10">
+                <img src="images/WhatsApp Image 2024-12-22 at 19.40.58_b68ddb1f.jpg" alt="Project 11">
+                <img src="images/WhatsApp Image 2024-12-22 at 19.40.58_cea023fc.jpg" alt="Project 12">
+                <img src="images/WhatsApp Image 2024-12-22 at 19.40.59_7f438af5.jpg" alt="Project 13">
+                <img src="images/WhatsApp Image 2024-12-22 at 19.40.59_21d1f1c9.jpg" alt="Project 14">
+                <img src="images/WhatsApp Image 2024-12-22 at 19.41.00_97649b5e.jpg" alt="Project 15">
+                <img src="images/WhatsApp Image 2024-12-22 at 19.41.00_b64ebaeb.jpg" alt="Project 16">
+                <img src="images/WhatsApp Image 2024-12-22 at 19.41.00_d56fb22c.jpg" alt="Project 17">
+                <img src="images/WhatsApp Image 2024-12-22 at 19.41.01_09bf077e.jpg" alt="Project 18">
+                <img src="images/WhatsApp Image 2024-12-22 at 19.41.01_67d9db2f.jpg" alt="Project 19">
+                <img src="images/WhatsApp Image 2024-12-22 at 19.41.01_374666d8.jpg" alt="Project 20">
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-logo">
+                <h3>Padmavati Steel Fab System</h3>
+                <p>Your trusted partner in iron and steel fabrication since 1984.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-social">
+                <h4>Follow Us</h4>
+                <ul>
+                    <li><a href="#" class="social-icon">Facebook</a></li>
+                    <li><a href="#" class="social-icon">Twitter</a></li>
+                    <li><a href="#" class="social-icon">Instagram</a></li>
+                    <li><a href="#" class="social-icon">LinkedIn</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Padmavati Steel Fab System. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
