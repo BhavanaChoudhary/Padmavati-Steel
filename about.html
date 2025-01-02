@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,14 +10,15 @@
 <body>
     <header class="main-header">
         <div class="logo">
-            <h1>Padmavati Steel Fab System</h1>
+            <h1 style="font-size:x-large;margin-top: 10px;">Padmavati Steel Fab System</h1>
         </div>
         <nav>
             <ul class="nav-links">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About Us</a></li>
                 <li><a href="gallery.html">Gallery</a></li>
-                
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
         <div class="contact">
@@ -42,6 +44,87 @@
             </div>
         </section>
     </main>
+    <div class="review-container">
+      <!-- Header Section -->
+      <div class="review-header">
+       
+        <div class="company-info">
+          <h2>Padmavati Steel Fab System</h2>
+          <div class="rating">
+            <span>4.8</span>
+            <span class="stars">★★★★★</span>
+          </div><br>
+          <p>Based on 9 reviews</p>
+          <p>Powered by <span class="google-logo">Google</span></p>
+        </div>
+      </div>
+  
+      <!-- Button -->
+      <button class="review-button" onclick="window.open('https://g.co/kgs/aiEybFP', '_blank')">
+        Review us on Google
+      </button>
+  
+      <!-- Carousel Section -->
+      <div class="carousel">
+        <div class="review-card">
+          <h3>Bhavana Choudhary</h3>
+          <p>★★★★★</p>
+          <p>Awesome service and good quality work. All the products and works are trustable.</p>
+        </div>
+        <div class="review-card">
+          <h3>Mohan Patel</h3>
+          <p>★★★★★</p>
+          <p>Very good work and good finishing done by Padmavati steel teams.</p>
+        </div>
+        <div class="review-card">
+          <h3>Lalit Choudhary</h3>
+          <p>★★★★★</p>
+          <p>Best railings, very strong work.</p>
+        </div>
+        <div class="review-card">
+          <h3>Kesarafdddsf Ram</h3>
+          <p>★★★★★</p>
+          <p>Welding and fabrication work done by good quality and service.</p>
+        </div>
+        <div class="review-card">
+          <h3>Jitendr Patel</h3>
+          <p>★★★★★</p>
+          <p>Good work and services.</p>
+        </div>
+        <div class="review-card">
+          <h3>Bhavana Choudhary</h3>
+          <p>★★★★★</p>
+          <p>Nice</p>
+        </div>
+        <div class="review-card">
+          <h3>choudhary Tech</h3>
+          <p>★★★★★</p>
+          <p>Excellent service and quality work.</p>
+        </div>
+        <div class="review-card">
+          <h3>Maruti Steel india</h3>
+          <p>★★★★★</p>
+          <p>Reliable and professional team.</p>
+        </div>
+        <div class="review-card">
+          <h3>K. Choudhary</h3>
+          <p>★★★★★</p>
+          <p>Great experience with Padmavati Steel.</p>
+        </div>
+      </div>
+  
+      <!-- Navigation Dots -->
+      <div class="dots">
+        <span class="dot active"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        
+      </div>
+    </div>
+    <script src="script.js"></script>
     <footer>
         <footer class="main-footer">
             <div class="footer-container">
@@ -100,7 +183,7 @@ body {
 }
 
 .logo h1 {
-    font-size: 2em;
+   width: 400px;
     color: #b7282e;
 }
 
@@ -189,6 +272,94 @@ body {
     font-size: 1.2em;
 }
 
+.review-container {
+  width: 90%;
+  max-width: 800px;
+  background: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  margin-left: 20%;
+}
+
+.review-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.logo {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+
+.company-info h2 {
+  margin: 0;
+  font-size: 1.5em;
+}
+
+.rating {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.stars {
+  color: orange;
+}
+
+.google-logo {
+  color: #4285f4;
+  font-weight: bold;
+}
+
+.review-button {
+  padding: 10px 20px;
+  background-color: #4285f4;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+.carousel {
+  display: flex;
+  overflow: hidden;
+  gap: 15px;
+  scroll-behavior: smooth;
+
+}
+
+.review-card {
+  flex: 0 0 30%;
+  background: #f1f1f1;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.dots {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  margin: 0 5px;
+  background: #bbb;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.dot.active {
+  background: #4285f4;
+}
 /* Footer */
 .main-footer {
     background-color: #333;
@@ -261,4 +432,34 @@ body {
     }
 }
 </style>
+<script>const carousel = document.querySelector('.carousel');
+  const dots = document.querySelectorAll('.dot');
+  
+  let index = 0;
+  
+  function updateCarousel() {
+    const offset = index * 300; // Adjust for card width
+    carousel.scrollTo({
+      left: offset,
+      behavior: 'smooth',
+    });
+  
+    dots.forEach((dot, i) => {
+      dot.classList.toggle('active', i === index);
+    });
+  }
+  
+  dots.forEach((dot, i) => {
+    dot.addEventListener('click', () => {
+      index = i;
+      updateCarousel();
+    });
+  });
+  
+  // Auto-scroll
+  setInterval(() => {
+    index = (index + 1) % dots.length;
+    updateCarousel();
+  }, 1000);
+  </script>
 </html>
